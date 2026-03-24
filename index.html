@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Narasimham Tablet | Sitaram Ayurveda</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1B4332;
+            --secondary: #F9F7F2;
+            --accent: #27ae60;
+            --text: #1a1a1a;
+            --light-text: #5e5e5e;
+            --border: #eeeeee;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; color: var(--text); line-height: 1.7; background-color: #fff; font-size: 18px; }
+
+        /* General UI Elements */
+        .promo-bar { background: var(--primary); color: white; text-align: center; padding: 12px; font-size: 14px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; }
+        .container { max-width: 1200px; margin: 40px auto; padding: 0 30px; }
+        .flex-grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 60px; align-items: start; }
+
+        /* Left side Image */
+        .gallery { background: var(--secondary); border-radius: 40px; padding: 60px; height: 550px; display: flex; align-items: center; justify-content: center; position: sticky; top: 20px; }
+        .gallery img { max-width: 85%; mix-blend-mode: multiply; }
+
+        /* Right side Content */
+        h1 { font-family: 'Playfair Display', serif; font-size: 52px; color: var(--primary); margin-bottom: 10px; }
+        .price { font-size: 28px; font-weight: 700; color: var(--text); margin: 20px 0; }
+        .rating-summary { display: flex; align-items: center; gap: 10px; margin-bottom: 30px; font-weight: 600; }
+        .stars { color: #f1c40f; letter-spacing: 2px; }
+
+        /* Buttons & Qty */
+        .purchase-zone { display: flex; gap: 15px; margin-bottom: 40px; }
+        .qty { display: flex; align-items: center; border: 1.5px solid #ddd; border-radius: 12px; padding: 0 15px; font-size: 20px; }
+        .qty button { background: none; border: none; padding: 10px; cursor: pointer; font-size: 20px; }
+        .btn { flex: 1; padding: 20px; border-radius: 12px; font-weight: 700; cursor: pointer; font-size: 16px; border: none; text-transform: uppercase; transition: 0.3s; }
+        .btn-main { background: var(--primary); color: white; }
+        .btn-main:hover { opacity: 0.9; transform: translateY(-2px); }
+
+        /* Review Section Styles */
+        .reviews-header { display: flex; justify-content: space-between; align-items: center; margin: 80px 0 40px; border-top: 1px solid var(--border); padding-top: 60px; }
+        .review-stats-box { background: #fff; border: 1px solid var(--border); border-radius: 20px; padding: 30px; display: flex; align-items: center; gap: 40px; box-shadow: 0 10px 30px rgba(0,0,0,0.02); }
+        .write-review-btn { background: var(--accent); color: white; padding: 12px 25px; border-radius: 10px; text-decoration: none; font-weight: 600; font-size: 14px; }
+
+        .reviews-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 40px; }
+        .review-card { border: 1px solid var(--border); border-radius: 20px; padding: 30px; transition: 0.3s; position: relative; }
+        .review-card:hover { box-shadow: 0 15px 40px rgba(0,0,0,0.05); }
+        .user-info { display: flex; align-items: center; gap: 15px; margin-bottom: 15px; }
+        .avatar { width: 45px; height: 45px; background: #e0f2f1; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--primary); font-weight: 700; font-size: 14px; }
+        .verified { color: #27ae60; font-size: 12px; font-weight: 700; text-transform: uppercase; display: flex; align-items: center; gap: 4px; }
+        .review-title { font-weight: 700; font-size: 18px; margin: 10px 0; display: block; }
+        .review-body { color: var(--light-text); font-size: 16px; margin-bottom: 15px; }
+        .review-date { font-size: 13px; color: #aaa; }
+
+        @media (max-width: 900px) {
+            .flex-grid, .reviews-grid { grid-template-columns: 1fr; }
+            .gallery { height: 350px; position: relative; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="promo-bar">Certified Ayurvedic Formula Since 1921</div>
+
+    <div class="container">
+        <div class="flex-grid">
+            <div class="gallery">
+                <img src="Narshima.webp" alt="Product">
+            </div>
+
+            <div class="product-info">
+                <h1>Narasimham Tablet</h1>
+                <p style="color: #888; font-style: italic;">Potent Rasayana for Hair & Strength</p>
+                
+                <div class="rating-summary">
+                    <span class="stars">★★★★★</span>
+                    <span>4.9</span>
+                    <span style="color: #bbb; font-weight: 400;">| 245 Verified Reviews</span>
+                </div>
+
+                <p class="price">₹350.00 — ₹550.00</p>
+
+                <div style="margin-bottom: 25px;">
+                    <label style="font-size: 12px; font-weight: 700; text-transform: uppercase; display: block; margin-bottom: 8px;">Size</label>
+                    <select style="width: 100%; padding: 15px; border-radius: 10px; border: 1.5px solid #eee; font-size: 16px;">
+                        <option>60 Tablets</option>
+                        <option>100 Tablets</option>
+                    </select>
+                </div>
+
+                <div class="purchase-zone">
+                    <div class="qty">
+                        <button onclick="changeQty(-1)">−</button>
+                        <span id="qty-val">1</span>
+                        <button onclick="changeQty(1)">+</button>
+                    </div>
+                    <button class="btn btn-main">Add To Cart</button>
+                </div>
+                <button class="btn" style="background: #fff; border: 1.5px solid #1B4332; color: #1B4332; width: 100%;">Buy It Now</button>
+            </div>
+        </div>
+
+        <div class="reviews-header">
+            <h2 style="font-family: 'Playfair Display', serif; font-size: 32px;">Customer Reviews</h2>
+            <a href="#" class="write-review-btn">Write a Review</a>
+        </div>
+
+        <div class="review-stats-box">
+            <div style="text-align: center; border-right: 1px solid #eee; padding-right: 40px;">
+                <h3 style="font-size: 48px; color: var(--primary);">4.9</h3>
+                <div class="stars">★★★★★</div>
+                <p style="font-size: 14px; color: #999; margin-top: 5px;">Based on 245 reviews</p>
+            </div>
+            <div style="flex: 1;">
+                <p style="font-size: 14px; font-weight: 600; color: var(--accent);">98% of customers recommend this product</p>
+                <div style="height: 8px; background: #eee; border-radius: 10px; margin-top: 10px; overflow: hidden;">
+                    <div style="width: 98%; height: 100%; background: var(--accent);"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="reviews-grid">
+            <div class="review-card">
+                <div class="user-info">
+                    <div class="avatar">PS</div>
+                    <div>
+                        <div style="font-weight: 700; font-size: 16px;">Priya Sharma</div>
+                        <div class="verified">✓ Verified Purchase</div>
+                    </div>
+                </div>
+                <div class="stars">★★★★★</div>
+                <span class="review-title">Amazing for hair growth!</span>
+                <p class="review-body">I have been using the Narasimham tablets for the past 2 months and I am absolutely satisfied by the results. My hair fall has stopped completely.</p>
+                <span class="review-date">6 months ago</span>
+            </div>
+
+            <div class="review-card">
+                <div class="user-info">
+                    <div class="avatar">AS</div>
+                    <div>
+                        <div style="font-weight: 700; font-size: 16px;">Ananya Singh</div>
+                        <div class="verified">✓ Verified Purchase</div>
+                    </div>
+                </div>
+                <div class="stars">★★★★★</div>
+                <span class="review-title">Love the traditional formula</span>
+                <p class="review-body">Sitaram Ayurveda never disappoints. This is so much better than chemical supplements. Feel much more energetic daily.</p>
+                <span class="review-date">4 months ago</span>
+            </div>
+
+            <div class="review-card">
+                <div class="user-info">
+                    <div class="avatar">MA</div>
+                    <div>
+                        <div style="font-weight: 700; font-size: 16px;">Meera Agarwal</div>
+                        <div class="verified">✓ Verified Purchase</div>
+                    </div>
+                </div>
+                <div class="stars">★★★★★</div>
+                <span class="review-title">Highly recommended</span>
+                <p class="review-body">The product was sent very securely and the quality is excellent. I can see the difference slowly. Thank you for this! 😊</p>
+                <span class="review-date">2 months ago</span>
+            </div>
+
+            <div class="review-card">
+                <div class="user-info">
+                    <div class="avatar">DI</div>
+                    <div>
+                        <div style="font-weight: 700; font-size: 16px;">Divya Iyer</div>
+                        <div class="verified">✓ Verified Purchase</div>
+                    </div>
+                </div>
+                <div class="stars">★★★★★</div>
+                <span class="review-title">Authentic Ayurveda</span>
+                <p class="review-body">Finally a brand that keeps the traditional essence alive. The tablets are easy to swallow and work effectively on strength.</p>
+                <span class="review-date">1 month ago</span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let q = 1;
+        function changeQty(val) {
+            q += val;
+            if (q < 1) q = 1;
+            document.getElementById('qty-val').innerText = q;
+        }
+    </script>
+</body>
+</html>
